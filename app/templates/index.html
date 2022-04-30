@@ -9,7 +9,11 @@
     {% endif %}
   </head>
   <body>
-    <p>{{get_news_data}}</p>
-    <h1>helllllo</h1>
+    <h1>{{ title }}</h1>
+    <ul>
+      {%for source in news_list%}
+      <li>{{source.name}}/li></li>
+      {%endfor%}
+    </ul>
   </body>
 </html>
