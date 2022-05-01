@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    {% if title %}
-    <title>{{ title }}</title>
-    {% else %}
-    <title>K-fort News</title>
-    {% endif %}
-  </head>
-  <body>
+{% extends 'base.html'%}
+{%block content%}
     <h1>{{ title }}</h1>
-    <ul>
-      {%for sources in news_sources%}
-      <li>{{sources.title}}</li></li>
-
-      {%endfor%}
+    <div>
+         {%for sources in news_sources%}
+        <ul>
+     
+      <li>URL--{{sources.url}}</li></li>
+      <li>NAME--{{sources.name}}</li>
+      <li>DESCRIPTION--{{sources.description}}</li>
+      <li>ID--{{sources.id}}</li>
+      <li>COUNTRY--{{sources.country}}</li>
+     
     </ul>
-  </body>
-</html>
+     {%endfor%}
+    </div>
+{%endblock%}
