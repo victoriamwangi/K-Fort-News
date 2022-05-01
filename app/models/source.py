@@ -1,6 +1,7 @@
 class Source:
-    def __init__(self, id, name, title, url):
-        self.id = id
-        self.name = name
+    def __init__(self, news_title, description, url, title):
+        self.id = news_title
+        self.title = title
+        self.name = description
         self.url = url
         

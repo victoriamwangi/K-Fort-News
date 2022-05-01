@@ -11,8 +11,9 @@
   <body>
     <h1>{{ title }}</h1>
     <ul>
-      {%for source in news_list%}
-      <li>{{source.name}}/li></li>
+      {%for sources in news_sources%}
+      <li>{{sources.title}}</li></li>
+
       {%endfor%}
     </ul>
   </body>
