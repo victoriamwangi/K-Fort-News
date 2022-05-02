@@ -1,3 +1,25 @@
 #navId {
-    background-image: red;
+    background-color: rgb(199, 37, 37);
+    color: white;
+    padding-left: 30vw;
 }
+
+.nav-item {
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.nav-item a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+/* .uls {
+    color: red;
+} */
