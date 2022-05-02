@@ -1,6 +1,6 @@
 {% extends 'base.html'%}
 {%block content%}
-    <h1>{{ title }}</h1>
+  
     <div>
          {%for sources in news_sources%}
         <ul>
@@ -14,4 +14,17 @@
     </ul>
      {%endfor%}
     </div>
+    <div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      Column
+    </div>
+    <div class="col-lg-4">
+      Column
+    </div>
+    <div style= "height:100vh; backgground-color: red"class="col-lg-4 ">
+      Column
+    </div>
+  </div>
+</div>
 {%endblock%}

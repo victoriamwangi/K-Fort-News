@@ -7,7 +7,7 @@ from .request import get_news
 def index():
     
     source = get_news()
-    title = "BBC"
+    title = "Kfort"
    
     return render_template('index.html', title = title, news_sources = source)
 

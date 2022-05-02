@@ -1,5 +1,5 @@
 class Config:
-    API_BASE_URL = "https://newsapi.org/v2/top-headlines/sources?&apiKey={}"
+    API_BASE_URL = "https://newsapi.org/v2/top-headlines/sources?country=us&apiKey={}"
     # 'https://api.themoviedb.org/3/movie/{}?api_key={}'
     # 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=270eb01000ec4deeae78422bae9aca3d'
     
