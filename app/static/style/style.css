@@ -19,7 +19,30 @@
     border: 1px solid black;
 }
 
+.row-sources {
+    padding-top: 3vw;
+}
 
-/* .uls {
-    color: red;
-} */
+.head-tag {
+    font-size: 1.4vw;
+}
+
+.uls {
+    box-shadow: 1px 1px 5px grey;
+    padding: 2vw;
+    margin-top: 1.1vw;
+}
+
+.uls li {
+    list-style: none;
+    font-size: 1.2v;
+}
+
+.source-name {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.source-name a {
+    color: rgb(199, 37, 37) !important;
+}
