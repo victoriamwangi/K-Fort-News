@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, request, redirect, url_for
 from app import app
 from .request import get_sources, get_articles
 
@@ -11,15 +11,14 @@ def index():
    
     return render_template('index.html', title = title, news_sources = source)
 
-@app.route('/article')
-def articles():
-    source_articles = get_articles('bbc-news')
-    
+@app.route('/article/<id>')
+def articles(id):
+    source_articles = get_articles(id)
+    # title = f'{article.title}'
+        
     return render_template('article.html', source_articles = source_articles)
 
-# @app.route('article/<int: id')
-# def article(id):
-#     article = get_articles(id)
-#     article_title = f'{article.title}'
+@app.route('/articles2')
+def att():
+    return render_template('articles2.html')
 
-#     return render_template('article.html', article_title = article_title)

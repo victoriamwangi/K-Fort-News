@@ -1,6 +1,10 @@
+{% extends 'base.html'%} {%block content%}
 <h3>BBC NEWS</h3>
+
 <ul>
   {%for articles in source_articles%}
   <li>{{articles.title}}</li>
+  <li>{{articles.description}}</li>
   {%endfor%}
 </ul>
+{%endblock%}
