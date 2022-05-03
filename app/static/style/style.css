@@ -1,3 +1,5 @@
+/* NAVBAR */
+
 #navId {
     background-color: rgb(199, 37, 37);
     color: white;
@@ -19,8 +21,16 @@
     border: 1px solid black;
 }
 
+
+/* HOME PAGE  */
+
+.head-tag {
+    font-weight: bold;
+    color: rgb(28, 28, 158);
+}
+
 .row-sources {
-    padding-top: 3vw;
+    padding-top: 1vw;
 }
 
 .head-tag {
@@ -38,6 +48,10 @@
     font-size: 1.2v;
 }
 
+.category {
+    font-weight: bold;
+}
+
 .source-name {
     font-size: 1.5vw;
     font-weight: bold;
@@ -46,6 +60,13 @@
 .source-name a {
     color: rgb(199, 37, 37) !important;
 }
+
+.source-name a:visited {
+    color: purple;
+}
+
+
+/* ARTICLES PAGE/ */
 
 .articles {
     margin-left: 2vw;
@@ -69,16 +90,26 @@
     list-style: none;
 }
 
+.container-article li span {
+    font-weight: bold;
+}
+
 #readMore {
     width: 10vw;
     background-color: transparent;
     border: rgb(199, 37, 37) 1px solid;
     margin-top: 1.5vw;
     color: rgb(28, 28, 158);
+    font-weight: bold;
 }
 
 .article-url {
     color: rgb(28, 28, 158);
     font-weight: bold;
     font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.container-article a:visited {
+    color: purple;
 }

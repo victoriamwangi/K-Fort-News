@@ -11,16 +11,23 @@
 <div class="row row-sources">
   <div class="col-lg-2"></div>
   <div class="col-lg-8 sources">
-    <h1 class="head-tag">Sources available:</h1>
+    <h1 class="head-tag">News Sources Available:</h1>
     {%for sources in news_sources%}
     <ul class="uls shadow">
       <li class="source-name">
         <a href="/article/{{sources.id}}">{{sources.name}} </a>
       </li>
       <li>{{sources.description}}</li>
-      <li>
-        <a href="/article/{{sources.id}}">heerreee</a>
-      </li>
+      <li class="category">Category: &nbsp; {{sources.category|upper}}</li>
+
+      <a
+        name=""
+        id="readMore"
+        class="btn btn-primary"
+        href="/article/{{sources.id}}"
+        role="button"
+        >VISIT SOURCE</a
+      >
     </ul>
     {%endfor%}
   </div>
