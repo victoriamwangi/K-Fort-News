@@ -9,11 +9,13 @@ class Source:
         
         
 class Article:
-    def __init__(self,id, author, title, description , urlToImage):
+    def __init__(self,id,  author, title, description ,url, urlToImage, publishedAt):
         self.id = id
         self.author = author
+        self.urlToImage = urlToImage
         self.title = title
         self.description = description
-        self.url = urlToImage
+        self.url = url 
+        self.publishedAt = publishedAt
         
         

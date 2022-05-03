@@ -53,8 +53,7 @@ def get_articles(id):
     with urllib.request.urlopen(get_articles_details_url) as url:#open url
        articles_details_data = url.read() #read url
        articles_details_response = json.loads(articles_details_data) #convert into py dictionaries
-    #    print(get_articles_details_url)
-       print(articles_details_response)
+   
       
         
        articles_results =None
@@ -68,14 +67,16 @@ def process_articles( articles_list):
     articles_results = []
     for articles_item in  articles_list:
         id =  articles_item.get('id')
+        author=  articles_item.get('author')
         title = articles_item.get('title')
-        name=  articles_item.get('author')
         description =  articles_item.get('description')
-        url=  articles_item.get('urlToImage')
+        url =  articles_item.get('url')
+        urlToImage=  articles_item.get('urlToImage')
+        publishedAt = articles_item.get('publishedAt')
        
         
-        if name:
-             articles_object = Article(id,title, name, description, url)
+        if title:
+             articles_object = Article(id,author, title, description, url,  urlToImage, publishedAt)
              articles_results.append( articles_object)
    
     return  articles_results

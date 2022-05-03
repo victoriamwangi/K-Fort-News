@@ -1,10 +1,25 @@
 {% extends 'base.html'%} {%block content%}
-<h3>BBC NEWS</h3>
 
-<ul>
-  {%for articles in source_articles%}
-  <li>{{articles.title}}</li>
-  <li>{{articles.description}}</li>
-  {%endfor%}
-</ul>
+<div class="row">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6 col-articles">
+    {%for articles in source_articles%}
+    <div class="container-article">
+      <img style="height: 100px; width: 100px" src=" {{articles.urlToImage}}" />
+      <ul class="articles">
+        <li class="article-name">
+          <a href="{{articles.url}}">{{articles.title}} </a>
+        </li>
+        <li>name{{articles.author}}</li>
+        <li>description{{articles.description}}</li>
+        <li>published at{{articles.publishedAt}}</li>
+      </ul>
+    </div>
+
+    {%endfor%}
+  </div>
+
+  <div class="col-lg-3"></div>
+</div>
+
 {%endblock%}

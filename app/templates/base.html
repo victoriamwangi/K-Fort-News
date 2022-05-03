@@ -13,12 +13,8 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link
-      href="{{ url_for('static', filename='style/style.css') }}"
-      rel="stylesheet"
-      type="text/css"
-    />
-    {% block styles%} {{ super() }} {% endblock %}
+
+    {% block style%} {{ super() }} {% endblock %}
   </head>
   <body>
     <!-- Navbar block  -->
@@ -28,4 +24,3 @@
     {% block content %} {% endblock%}
   </body>
 </html>
-  

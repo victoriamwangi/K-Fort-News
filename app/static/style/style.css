@@ -46,3 +46,27 @@
 .source-name a {
     color: rgb(199, 37, 37) !important;
 }
+
+.articles {
+    margin-left: 2vw;
+}
+
+
+/* .article {
+    box-shadow: 1px 1px 5px grey;
+} */
+
+.container-article {
+    display: flex;
+    height: 15vw;
+    width: 100%;
+    padding-top: 3vw;
+}
+
+.container-article img {
+    width: 25vw;
+}
+
+.container-article li {
+    list-style: none;
+}
