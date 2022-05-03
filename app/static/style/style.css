@@ -68,3 +68,17 @@
 .container-article li {
     list-style: none;
 }
+
+#readMore {
+    width: 10vw;
+    background-color: transparent;
+    border: rgb(199, 37, 37) 1px solid;
+    margin-top: 1.5vw;
+    color: rgb(28, 28, 158);
+}
+
+.article-url {
+    color: rgb(28, 28, 158);
+    font-weight: bold;
+    font-size: 1.3vw;
+}

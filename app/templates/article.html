@@ -8,11 +8,19 @@
       <img style="height: 100px; width: 100px" src=" {{articles.urlToImage}}" />
       <ul class="articles">
         <li class="article-name">
-          <a href="{{articles.url}}">{{articles.title}} </a>
+          <a class="article-url" href="{{articles.url}}">{{articles.title}} </a>
         </li>
         <li>Author:{{articles.author}}</li>
         <li>{{articles.description}}</li>
         <li>Published at{{articles.publishedAt}}</li>
+        <a
+          name=""
+          id="readMore"
+          class="btn btn-primary"
+          href="{{articles.url}}"
+          role="button"
+          >READ ARTICLE</a
+        >
       </ul>
     </div>
 
