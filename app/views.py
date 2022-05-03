@@ -20,3 +20,7 @@ def articles(id):
 
 
 
+@app.route('/about')
+def about():
+    title = "about"
+    return render_template('about.html' ,title =title)
