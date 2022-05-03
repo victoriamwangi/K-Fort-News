@@ -51,20 +51,18 @@
     margin-left: 2vw;
 }
 
-
-/* .article {
-    box-shadow: 1px 1px 5px grey;
-} */
-
 .container-article {
     display: flex;
     height: 15vw;
     width: 100%;
-    padding-top: 3vw;
+    margin-top: 3vw;
+    padding: 2vw;
+    box-shadow: 1px 1px 5px grey;
 }
 
 .container-article img {
-    width: 25vw;
+    height: 80% !important;
+    width: 20vw !important;
 }
 
 .container-article li {

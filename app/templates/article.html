@@ -1,8 +1,8 @@
 {% extends 'base.html'%} {%block content%}
 
 <div class="row">
-  <div class="col-lg-3"></div>
-  <div class="col-lg-6 col-articles">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8 col-articles">
     {%for articles in source_articles%}
     <div class="container-article">
       <img style="height: 100px; width: 100px" src=" {{articles.urlToImage}}" />
@@ -10,16 +10,16 @@
         <li class="article-name">
           <a href="{{articles.url}}">{{articles.title}} </a>
         </li>
-        <li>name{{articles.author}}</li>
-        <li>description{{articles.description}}</li>
-        <li>published at{{articles.publishedAt}}</li>
+        <li>Author:{{articles.author}}</li>
+        <li>{{articles.description}}</li>
+        <li>Published at{{articles.publishedAt}}</li>
       </ul>
     </div>
 
     {%endfor%}
   </div>
 
-  <div class="col-lg-3"></div>
+  <div class="col-lg-2"></div>
 </div>
 
 {%endblock%}

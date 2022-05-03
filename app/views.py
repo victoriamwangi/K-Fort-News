@@ -14,11 +14,9 @@ def index():
 @app.route('/article/<id>')
 def articles(id):
     source_articles = get_articles(id)
-    # title = f'{article.title}'
+
         
     return render_template('article.html', source_articles = source_articles)
 
-@app.route('/articles2')
-def att():
-    return render_template('articles2.html')
+
 
