@@ -24,3 +24,4 @@ def articles(id):
 def about():
     title = "about"
     return render_template('about.html' ,title =title)
+
