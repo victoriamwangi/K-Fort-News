@@ -6,8 +6,6 @@ class Config:
     API_KEY = os.environ.get('API_KEY')
     
     
-    # API_KEY = '270eb01000ec4deeae78422bae9aca3d'
-    
 
 class DevConfig(Config):
     DEBUG = True
