@@ -43,8 +43,7 @@ Run `python3 manager.py test`
 - HTML - which was used to build the general structure of the page.
 - CSS - which was used to style the page.
 - Bootstrap - which was used to make the page responsive and visually appealing
-- JavaScript - which was used to form information
-- Angular- js framework used to do fast development
+- Python(Flask)- which was used to develop methods to consume the API
 
 ## Licence
 
