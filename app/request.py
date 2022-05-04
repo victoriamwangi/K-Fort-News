@@ -1,13 +1,19 @@
-from app import app
 import urllib.request, json
-from .models.source import Source, Article
+from .models import Source, Article
 
 # Source = source.Source
+api_key = None
+base_url = None
+article_url = None
+
+def configure_request(app):
+    global api_key, base_url, article_url
+    api_key = app.config['API_KEY']
+    base_url = app.config['API_BASE_URL']
+    article_url = app.config['ARTICLE_BASE_URL']
 
 
-api_key  = app.config['API_KEY']
-base_url = app.config['API_BASE_URL']
-article_url = app.config['ARTICLE_BASE_URL']
+
 
 
 def get_sources():
