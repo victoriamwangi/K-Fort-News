@@ -1,54 +1,50 @@
 # K-Fort-News
 
-
 ## Table of Content
 
-+ [Description](#description)
-+ [Installation](#installation)
-+ [Development server](#dependecies)
-+ [Requirements](#requirements)
-+ [Technology Used](#technology-used)
-+ [Licence](#licence)
-+ [Authors Info](#authors-info)
-
+- [Description](#description)
+- [Installation](#installation)
+- [Development server](#dependecies)
+- [Requirements](#requirements)
+- [Technology Used](#technology-used)
+- [Licence](#licence)
+- [Authors Info](#authors-info)
 
 ## Description
+
 This project showcases my github information such as user name, repository and their respective description as fetched using the github API. It allows one to search a github user by typing in their usernames. The search results show the user's repository, their descriptions, date the repositories were created and a link to the repositories on github.
-SITE URL: []
+SITE URL: [https://git.heroku.com/k-fort-news.git]
 
 ## Installation
+
 On the command line type:
 git clone https://github.com/victoriamwangi/K-Fort-News.git
-cd GitHubSearch
-npm install
+cd K-Fort-News
 to open project on vs code run: code .
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Requirements
 
-* Either a computer,phone,tablet or an Ipad to interact with the site and access to the Internet.
-* For installation: npm, angular 
+- Either a computer,phone,tablet or an Ipad to interact with the site and access to the Internet.
+- For installation: python, pip
 
-## Build
+## Serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Create environment: `python3 -m venv --without-pip virtual`
+Activate environment: `source virtual/bin activate`
+Install flask:` pip install flask`
+Serve: `chmod a+x start.sh` then `./start.sh`
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
+Run `python3 manager.py test`
 
 ## Technology Used
-* HTML - which was used to build the general structure of the page.
-* CSS - which was used to style the page.
-* Bootstrap - which was used to make the page responsive and visually appealing
-* JavaScript - which was used to form information
-* Angular- js framework used to do fast development 
 
+- HTML - which was used to build the general structure of the page.
+- CSS - which was used to style the page.
+- Bootstrap - which was used to make the page responsive and visually appealing
+- JavaScript - which was used to form information
+- Angular- js framework used to do fast development
 
 ## Licence
 
@@ -75,4 +71,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Authors Info
+
 LinkedIn - [https://www.linkedin.com/in/victoria-mwangi-5bb054203/]
